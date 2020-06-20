@@ -13,7 +13,7 @@ grammars = [
     ['S:X Y\nX:e\nX:b\nX:lambda\nY:a\nY:d', True, ('b d $', 'S=>X Y=>b Y=>b d')],
     ['S:A\nA:B A\nA:lambda\nB:a B\nB:b', True, ('a a a b $', 'S=>A=>B A=>a B A=>a a B A=>a a a B A=>a a a b A=>a a a b')],
     ['S:A B\nA:a A\nA:c\nA:lambda\nB:b B\nB:d', True, ('a a c d $', 'S=>A B=>a A B=>a a A B=>a a c B=>a a c d')],
-    ['S:S C w c\nS:S D\nS:S E\nS:F\nS:F\nS:H', False, None]
+    ['S:S C w c\nS:S D\nS:S E\nS:F\nS:G\nS:H', False, None]
 ]
 
 for ix, grammar in enumerate(grammars):
