@@ -14,7 +14,7 @@ samples = [
     ('''SELECT c.first_name,
                c.last_name
         FROM customers AS c
-        WHERE c.id = 2''', {'customers': ['first_name', 'last_name', 'id']}),
+        WHERE c.id = 2''', {'customers': ['first_name', 'id', 'last_name']}),
     ('''SELECT DISTINCT c.first_name,
                         c.last_name,
                         p.number
